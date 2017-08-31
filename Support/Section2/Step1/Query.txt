@@ -1,0 +1,24 @@
+-- IoTHub.ConnectionDeviceId is added by IoT Hub
+SELECT
+    IoTHub.ConnectionDeviceId as deviceId,
+     CONCAT(IoTHub.ConnectionDeviceId, CAST(time as nvarchar(max))) as msgId,
+    *
+INTO ThrOutput FROM sensor 
+TIMESTAMP BY time;
+
+SELECT
+    IoTHub.ConnectionDeviceId as deviceId,
+    CONCAT(IoTHub.ConnectionDeviceId, CAST(time as nvarchar(max))) as msgId,
+    time as time, accelx, accely, accelz,
+    CASE WHEN temp>30.0 THEN 'HoT'  ELSE 'Cold' END as TempStatus
+INTO MLOutput FROM sensor
+TIMESTAMP BY time
+
+SELECT
+    IoTHub.ConnectionDeviceId as deviceId,
+    CONCAT(IoTHub.ConnectionDeviceId, CAST(time as nvarchar(max))) as msgId,
+    time as time, Avg(temp) as tempAvg, Avg(humidity) as humAvg, Avg(pressure) as presAvg,
+    Avg(accelx) as accelxAvg, Avg(accely) as accelyAvg, Avg(accelz) as accelzAvg
+INTO ALOutput FROM sensor
+TIMESTAMP BY time
+GROUP BY IoTHub.ConnectionDeviceId, TUMBLINGWINDOW (second,15), time, deviceId, msgId;
