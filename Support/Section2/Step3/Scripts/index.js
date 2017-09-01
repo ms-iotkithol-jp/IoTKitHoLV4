@@ -46,12 +46,12 @@ $(document).ready(function () {
         options: basicOption
     });
     var hub = $.connection.envHub;
-    hub.on("Update", function (packet) {
-        if (!packet.Time || !packet.Temperature) {
+    hub.on("Environment", function (packet) {
+        if (!packet.time || !packet.temperature) {
             return;
         }
-        timeData.push(packet.Time);
-        tempData.push(packet.Temperature);
+        timeData.push(packet.time);
+        tempData.push(packet.temperature);
 
         // only keep no more than 50 points in the line chart
         var len = timeData.length;

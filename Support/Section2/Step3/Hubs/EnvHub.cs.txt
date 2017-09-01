@@ -1,0 +1,12 @@
+        public void Environment(dynamic packet)
+        {
+            var msg = new Models.EnvSensor()
+            {
+                DeviceId = packet.deviceid,
+                Time = packet.time,
+                Temperature = packet.temperature,
+                Humidity = packet.humidity,
+                Pressure = packet.pressure
+            };
+            Clients.Others.Environment(packet);
+        }
