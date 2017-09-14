@@ -8,6 +8,11 @@ IoT Kit Hands-on Training Ver 4の実習用デバイス一覧です。
 Windows 10 IoT Coreが動作するデバイスを使った実習です。 
 →[説明資料](https://doc.co/8VNqwE/NsXXfD) 
 
+## Device Emulator on Azure Functions 
+Azure Functions上で動作するデバイスエミュレータです。 
+→[リポジトリ](https://github.com/ms-iotkithol-jp/DeviceEmulatorOnFunctions)  
+
+
 ## 求！Contributors 
 実習コンテンツは、クラウド側とやり取りするデータ形式を合わせれば、[Azure IoT Device SDK](http://github.com/Azure/azure-iot-sdks)が動作する様々なデバイスで実習可能です。 
 デバイスベンダー、センサーベンダー、及び、Geekの皆様、是非、得意なデバイスに関するコンテンツの作成協力よろしくお願いいたします。 
