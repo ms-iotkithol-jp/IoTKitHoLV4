@@ -6,10 +6,11 @@ SELECT
 INTO ThrOutput FROM sensor 
 TIMESTAMP BY time;
 
+-- In the case of temperature is temp, please replace ambience by temp
 SELECT
     IoTHub.ConnectionDeviceId as deviceId,
     CONCAT(IoTHub.ConnectionDeviceId, CAST(time as nvarchar(max))) as msgId,
-    time as time, Avg(temp) as tempAvg, Avg(humidity) as humAvg, Avg(pressure) as presAvg
+    time as time, Avg(ambience) as tempAvg, Avg(humidity) as humAvg, Avg(pressure) as presAvg
 INTO ALOutput FROM sensor
 TIMESTAMP BY time
 GROUP BY IoTHub.ConnectionDeviceId, TUMBLINGWINDOW (second,15), time, deviceId, msgId;
