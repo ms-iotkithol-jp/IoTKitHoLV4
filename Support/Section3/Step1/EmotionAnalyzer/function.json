@@ -1,0 +1,18 @@
+{
+    "bindings": [{
+            "name": "myBlob",
+            "type": "blobTrigger",
+            "direction": "in",
+            "path": "devicefiles/{name}",
+            "connection": "[my_storage_account_STORAGE]"
+        },
+        {
+            "type": "table",
+            "name": "outputTable",
+            "tableName": "Emotions",
+            "connection": "[my_storage_account_STORAGE]",
+            "direction": "in"
+        }
+    ],
+    "disabled": false
+}
