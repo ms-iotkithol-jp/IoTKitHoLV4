@@ -12,6 +12,9 @@ Windows 10 IoT Coreが動作するデバイスを使った実習です。
 Azure Functions上で動作するデバイスエミュレータです。 
 →[リポジトリ](https://github.com/ms-iotkithol-jp/DeviceEmulatorOnFunctions)  
 
+## Windows 10 IoT Core Device + SenseHat
+Windows 10 IoT Coreが動作するRaspberry Pi3で、SenseHat装着したデバイスを使った実習です。
+→[サンプルアプリと手順](https://github.com/ms-iotkithol-jp/WinIoTCoreSenseHATApp)
 
 ## 求！Contributors 
 実習コンテンツは、クラウド側とやり取りするデータ形式を合わせれば、[Azure IoT Device SDK](http://github.com/Azure/azure-iot-sdks)が動作する様々なデバイスで実習可能です。 
