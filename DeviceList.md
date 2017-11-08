@@ -17,6 +17,9 @@ Azure Functions上で動作するデバイスエミュレータです。
 Windows 10 IoT Coreが動作するRaspberry Pi3で、SenseHat装着したデバイスを使った実習です。
 →[サンプルアプリと手順](https://github.com/ms-iotkithol-jp/WinIoTCoreSenseHATApp)
 
+## STマイクロエレクトロニクス [NEUCLEO](http://www.st.com/content/st_com/en/products/evaluation-tools/solution-evaluation-tools/communication-and-connectivity-solution-eval-boards/p-nucleo-azure1.html) 
+→[説明資料](http://www.st.com/content/st_com/en/products/embedded-software/mcus-embedded-software/stm32-embedded-software/stm32-ode-function-pack-sw/fp-cld-azure1.html) 
+
 ## 求！Contributors 
 実習コンテンツは、クラウド側とやり取りするデータ形式を合わせれば、[Azure IoT Device SDK](http://github.com/Azure/azure-iot-sdks)が動作する様々なデバイスで実習可能です。 
 デバイスベンダー、センサーベンダー、及び、Geekの皆様、是非、得意なデバイスに関するコンテンツの作成協力よろしくお願いいたします。 
