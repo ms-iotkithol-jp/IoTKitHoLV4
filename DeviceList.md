@@ -2,7 +2,8 @@
 IoT Kit Hands-on Training Ver 4の実習用デバイス一覧です。 
 ## Raspberry Pi3 + TI Sensor Tag CC2650 
 [Azure IoT Edge SDK](http://github.com/Azure/iot-edge)を使って、Raspbianで実習します。  
-→[説明資料](https://1drv.ms/p/s!Aihe6QsTtyqct5NNh7x8T_5g0zXQuw)
+→[説明資料](https://1drv.ms/p/s!Aihe6QsTtyqct5NNh7x8T_5g0zXQuw)  
+※[東京エレクトロンデバイス株式会社 Azure IoT PoCキット1：Armadillo-IoTゲートウェイ G3](https://esg.teldevice.co.jp/azure-iot/iotportal/column_ex/detail/id/146/)でも実行可能
 
 ## Windows 10 IoT Core Device + TI Sensor Tag CC2650 
 Windows 10 IoT Coreが動作するデバイスを使った実習です。 
