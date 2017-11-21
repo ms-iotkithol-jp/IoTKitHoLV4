@@ -1,0 +1,18 @@
+-- https://docs.microsoft.com/en-us/azure/iot-edge/quickstart
+-- send data - {"machine":{"temperature":22.704140966503946,"pressure":1.1941426417536141},"ambient":{"temperature":21.253944317229998,"humidity":26},"timeCreated":"2017-11-21T06:09:41.9466139Z"}
+-- IoTHub.ConnectionDeviceId is added by IoT Hub
+SELECT
+    IoTHub.ConnectionDeviceId as deviceId,
+     CONCAT(IoTHub.ConnectionDeviceId, CAST(timeCreated as nvarchar(max))) as msgId,
+    *
+INTO ThrOutput FROM sensor 
+TIMESTAMP BY timeCreated;
+
+-- In the case of temperature is temp, please replace ambience by temp
+SELECT
+    IoTHub.ConnectionDeviceId as deviceId,
+    CONCAT(IoTHub.ConnectionDeviceId, CAST(timeCreated as nvarchar(max))) as msgId,
+    time as timeCreated, Avg(ambient.temperature) as tempAvg, Avg(ambient.pressure) as presAvg
+INTO ALOutput FROM sensor
+TIMESTAMP BY timeCreated
+GROUP BY IoTHub.ConnectionDeviceId, TUMBLINGWINDOW (second,15), timeCreated, deviceId, msgId;

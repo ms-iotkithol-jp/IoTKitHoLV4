@@ -1,0 +1,18 @@
+-- http://www.st.com/content/st_com/en/products/embedded-software/mcus-embedded-software/stm32-embedded-software/stm32-ode-function-pack-sw/fp-cld-azure1.html
+-- FP-CLD-AZURE1 quick start guide
+-- IoTHub.ConnectionDeviceId is added by IoT Hub
+SELECT
+    IoTHub.ConnectionDeviceId as deviceId,
+     CONCAT(IoTHub.ConnectionDeviceId, CAST(ts as nvarchar(max))) as msgId,
+    *
+INTO ThrOutput FROM sensor 
+TIMESTAMP BY ts;
+
+-- In the case of temperature is temp, please replace ambience by temp
+SELECT
+    IoTHub.ConnectionDeviceId as deviceId,
+    CONCAT(IoTHub.ConnectionDeviceId, CAST(ts as nvarchar(max))) as msgId,
+    ts as time, Avg(ambience) as tempAvg, Avg(humidity) as humAvg
+INTO ALOutput FROM sensor
+TIMESTAMP BY ts
+GROUP BY IoTHub.ConnectionDeviceId, TUMBLINGWINDOW (second,15), ts, deviceId, msgId;
