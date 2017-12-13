@@ -12,7 +12,7 @@ TIMESTAMP BY timeCreated;
 SELECT
     IoTHub.ConnectionDeviceId as deviceId,
     CONCAT(IoTHub.ConnectionDeviceId, CAST(timeCreated as nvarchar(max))) as msgId,
-    time as timeCreated, Avg(ambient.temperature) as tempAvg, Avg(ambient.pressure) as presAvg
+    time as timeCreated, Avg(ambient.temperature) as tempAvg, Avg(ambient.humidity) as humAvg, Avg(machine.pressure) as presAvg
 INTO ALOutput FROM sensor
 TIMESTAMP BY timeCreated
 GROUP BY IoTHub.ConnectionDeviceId, TUMBLINGWINDOW (second,15), timeCreated, deviceId, msgId;
