@@ -25,7 +25,7 @@ Windows 10 IoT Coreが動作するRaspberry Pi3で、SenseHat装着したデバ�
 
 ## Seeed Wio LTE + SORACOM Beam
 Seeed Wio LTEとSORACOM Beamを使って学習します。
-→[説明資料](https://www.slideshare.net/SeeedJP/iot-kit-seeed-wio-lte-soracom-beam)
+→[説明資料](https://www.slideshare.net/SeeedJP/iot-kit-seeed-wio-lte-soracom-beam-89867228)
 
 # 求！Contributors 
 実習コンテンツは、クラウド側とやり取りするデータ形式を合わせれば、[Azure IoT Device SDK](http://github.com/Azure/azure-iot-sdks)が動作する様々なデバイスで実習可能です。 
