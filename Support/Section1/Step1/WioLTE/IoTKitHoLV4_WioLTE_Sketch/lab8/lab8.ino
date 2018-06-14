@@ -367,6 +367,7 @@ void AlarmInitialize(int pin)
 {
   AlarmPin = pin;
   pinMode(AlarmPin, OUTPUT);
+  digitalWrite(AlarmPin, LOW);
 }
 
 void AlarmSet(bool on)
