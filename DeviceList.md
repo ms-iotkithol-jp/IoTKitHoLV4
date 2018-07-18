@@ -7,7 +7,7 @@ IoT Kit Hands-on Training Ver 4の実習用デバイス一覧です。
 
 ## Windows 10 IoT Core Device + TI Sensor Tag CC2650 
 Windows 10 IoT Coreが動作するデバイスを使った実習です。 
-→[説明資料](https://doc.co/8VNqwE/NsXXfD) 
+→[説明資料](https://github.com/ms-iotkithol-jp/WinIoTCoreTIIoTHubApp) 
 
 ## Device Emulator on Azure Functions 
 Azure Functions上で動作するデバイスエミュレータです。 
@@ -18,10 +18,13 @@ Windows 10 IoT Coreが動作するRaspberry Pi3で、SenseHat装着したデバ�
 →[サンプルアプリと手順](https://github.com/ms-iotkithol-jp/WinIoTCoreSenseHATApp)
 
 ## STマイクロエレクトロニクス [NEUCLEO](http://www.st.com/content/st_com/en/products/evaluation-tools/solution-evaluation-tools/communication-and-connectivity-solution-eval-boards/p-nucleo-azure1.html) 
-→[説明資料](http://www.st.com/content/st_com/en/products/embedded-software/mcus-embedded-software/stm32-embedded-software/stm32-ode-function-pack-sw/fp-cld-azure1.html) 
+→[説明資料](http://www.st.com/content/st_com/en/products/embedded-software/mcus-embedded-software/stm32-embedded-software/stm32-ode-function-pack-sw/fp-cld-azure1.html)  
+※第二章ステップ1のクエリーは、device-specific/Query-STMicro-NEUCLEO.txtを使う事 
 
 ## Azure IoT Edge SDK Ver 2 Emulator 
-→[説明資料](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart) 
+→[説明資料](https://docs.microsoft.com/ja-jp/azure/iot-edge/)  
+※5分間のクイックスタート（WindowsまたはLinux）を実施→チュートリアルの「モジュールを展開する」まで実施  
+※第二章ステップ1のクエリーは、device-specific/Query-IoTEdgeSDKV2-tempSensor.txtを使う事
 
 ## Seeed Wio LTE + SORACOM Beam
 Seeed Wio LTEとSORACOM Beamを使って学習します。
@@ -29,4 +32,6 @@ Seeed Wio LTEとSORACOM Beamを使って学習します。
 
 # 求！Contributors 
 実習コンテンツは、クラウド側とやり取りするデータ形式を合わせれば、[Azure IoT Device SDK](http://github.com/Azure/azure-iot-sdks)が動作する様々なデバイスで実習可能です。 
-デバイスベンダー、センサーベンダー、及び、Geekの皆様、是非、得意なデバイスに関するコンテンツの作成協力よろしくお願いいたします。 
+デバイスベンダー、センサーベンダー、及び、Geekの皆様、是非、得意なデバイスに関するコンテンツの作成協力よろしくお願いいたします。   
+IoT Hubをはじめとする様々なPaaSは機能がどんどん増えていきます。また、Githubで公開されているリポジトリも偶に変わり、ここで公開しているテキストがうまく動かない状況も多々発生します。  
+そんな時は、Issueに書くか、Pull&Requestしてくださいませー
