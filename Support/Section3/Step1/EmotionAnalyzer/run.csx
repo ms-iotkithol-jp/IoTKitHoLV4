@@ -1,5 +1,4 @@
-#
-r "System.Threading.Tasks"
+#r "System.Threading.Tasks"
 
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
