@@ -30,6 +30,10 @@ Windows 10 IoT Coreが動作するRaspberry Pi3で、SenseHat装着したデバ�
 Seeed Wio LTEとSORACOM Beamを使って学習します。
 →[説明資料](https://www.slideshare.net/SeeedJP/iot-kit-seeed-wio-lte-soracom-beam-v41)
 
+## Raspbery Pi + SenseHat + SORACOM Beam
+Raspberry PiとSenseHat、SORACOM Beamを使って学習します。
+→[説明資料](https://github.com/ms-iotkithol-jp/RPi3SenseHatSORACOM)
+
 ## IoT Device Simulator  
 MACやWindowsを使って学習します。  
 →[開発サイト](https://github.com/ms-iotkithol-jp/IoTDeviceSamples)  
