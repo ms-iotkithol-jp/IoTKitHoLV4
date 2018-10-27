@@ -10,7 +10,7 @@ Windows 10 IoT Coreが動作するデバイスを使った実習です。
 →[説明資料](https://github.com/ms-iotkithol-jp/WinIoTCoreTIIoTHubApp) 
 
 ## Arduino + Sakura.io
-Arduino＋sakura.io モジュールを使った実習です。
+Arduino＋[sakura.io モジュール](https://sakura.io/product/module_lte.html)を使った実習です。
 →[説明資料](https://gist.github.com/Nyuuki0224/2d686b06eea235b88fd91681a638df3b#azure-part1)
 
 ## Device Emulator on Azure Functions 
@@ -31,7 +31,7 @@ Windows 10 IoT Coreが動作するRaspberry Pi3で、SenseHat装着したデバ�
 ※第二章ステップ1のクエリーは、device-specific/Query-IoTEdgeSDKV2-tempSensor.txtを使う事
 
 ## Seeed Wio LTE + SORACOM Beam
-Seeed Wio LTEとSORACOM Beamを使って学習します。
+Seeed Wio LTEとSORACOM Beam - [Grove IoT Starter Kit](https://soracom.jp/products/kit/grovestarter_kit_3g_soracom_edition/) - を使って学習します。
 →[説明資料](https://www.slideshare.net/SeeedJP/iot-kit-seeed-wio-lte-soracom-beam-v41)
 
 ## Raspbery Pi + SenseHat + SORACOM Beam
