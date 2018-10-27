@@ -9,6 +9,10 @@ IoT Kit Hands-on Training Ver 4の実習用デバイス一覧です。
 Windows 10 IoT Coreが動作するデバイスを使った実習です。 
 →[説明資料](https://github.com/ms-iotkithol-jp/WinIoTCoreTIIoTHubApp) 
 
+## Arduino + Sakura.io
+Arduino＋sakura.io モジュールを使った実習です。
+→[説明資料](https://gist.github.com/Nyuuki0224/2d686b06eea235b88fd91681a638df3b#azure-part1)
+
 ## Device Emulator on Azure Functions 
 Azure Functions上で動作するデバイスエミュレータです。 
 →[リポジトリ](https://github.com/ms-iotkithol-jp/DeviceEmulatorOnFunctions)  
