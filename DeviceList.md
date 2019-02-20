@@ -41,7 +41,16 @@ Raspberry PiとSenseHat、SORACOM Beamを使って学習します。
 ## IoT Device Simulator  
 MACやWindowsを使って学習します。  
 →[開発サイト](https://github.com/ms-iotkithol-jp/IoTDeviceSamples)  
-→[資料](https://1drv.ms/p/s!Aihe6QsTtyqct-IS-ARyuLG9mNwWyQ)  
+→[資料](https://1drv.ms/p/s!Aihe6QsTtyqct-IS-ARyuLG9mNwWyQ)
+
+## NVIDIA JETSON TX2
+[NVIDIA JETSON TX2](https://developer.nvidia.com/embedded/buy/jetson-tx2-devkit)上で動く、[IoT ALGYANから公開されているハンズオン](https://algyan.connpass.com/event/105282/)をカスタマイズして、Azure IoT Hubに接続 
+→[資料](https://github.com/ms-iotkithol-jp/nvidia-jetson-tx2)
+
+## Raspberry Pi + SenseHat + Webcam 
+Raspberry PiとSenseHat、Webcamを使って、Custom Visionで学習させたモデルをIoT Edgeで動かし、認識結果とセンサー計測データをAzure IoT Hubに送信します。 
+→[資料](https://github.com/ms-iotkithol-jp/Custom-vision-service-iot-edge-raspberry-pi/blob/master/Extended.md) 
+
 # 求！Contributors 
 実習コンテンツは、クラウド側とやり取りするデータ形式を合わせれば、[Azure IoT Device SDK](http://github.com/Azure/azure-iot-sdks)が動作する様々なデバイスで実習可能です。 
 デバイスベンダー、センサーベンダー、及び、Geekの皆様、是非、得意なデバイスに関するコンテンツの作成協力よろしくお願いいたします。   
